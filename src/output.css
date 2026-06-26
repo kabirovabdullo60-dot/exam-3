@@ -418,6 +418,9 @@
   .w-55 {
     width: calc(var(--spacing) * 55);
   }
+  .w-70 {
+    width: calc(var(--spacing) * 70);
+  }
   .w-72 {
     width: calc(var(--spacing) * 72);
   }
@@ -447,6 +450,9 @@
   }
   .max-w-\[0px\] {
     max-width: 0px;
+  }
+  .max-w-\[200px\] {
+    max-width: 200px;
   }
   .max-w-\[400px\] {
     max-width: 400px;
