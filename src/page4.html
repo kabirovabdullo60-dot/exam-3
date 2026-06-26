@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-[#000000] text-white font-sans antialiased bg-dots  flex flex-col justify-between">
+     <header class="max-w-7xl w-full mx-auto px-6 py-6 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <img src="./images/Logo (6).png" alt="" class="w-30">
+        </div>
+   <nav class="items-center gap-x-8 gap-y-4 text-sm font-medium text-gray-300 hidden lg:flex">
+                <a href="./index.html" target="_blank" class="hover:text-white transition">Home</a>
+                <a href="./page1.html " target="_blank" class="hover:text-white transition">Services</a>
+                <a href="./page2.html" target="_blank" class="hover:text-white transition">Portfolio</a>
+                <a href="./page3.html" target="_blank" class="hover:text-white transition">About Us</a>
+                <a href="./page4.html" target="_blank" class="hover:text-white transition">Careers</a>
+            </nav>
+
+        <div>
+            <a href="#" class="bg-[#1d4ed8] hover:bg-blue-600 text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition shadow-lg shadow-blue-500/20">
+                Contact Us
+            </a>
+        </div>
+    </header>
+      <section class="bg-[#000000] text-white py-12 px-6 font-sans">
+    <div class="max-w-7xl mx-auto">
+        
+        <div class="bg-[#111315] rounded-[3rem] border border-gray-800/40 relative overflow-hidden p-8 md:p-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+            
+            <div class="lg:col-span-7 space-y-6 relative z-10">
+                <h2 class="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
+                    Contact Us
+                </h2>
+                
+                <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-2xl">
+Get in touch with our team to discuss how we can help transform your business.
+We’re here to help.            </div>
+
+            <div class="lg:col-span-5 flex justify-center lg:justify-end relative z-10">
+                <img src="./images/calogo1 2 (1).png" alt="" class="w-70 max-w-[400px] lg:max-w-none object-contain">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<div class=" text-gray-300 font-sans antialiased  flex items-center justify-center py-8 px-4 md:px-8">
+
+    <div class="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- СУТУНИ ЧАП: Формаи фиристодани паём (Send Us a Message) -->
+        <div class="lg:col-span-7 bg-[#18181c] border border-gray-800 rounded-2xl p-6 md:p-8 shadow-xl">
+            <h2 class="text-xl font-bold text-white mb-6">Send Us a Message</h2>
+            
+            <form class="space-y-4">
+                <!-- First Name & Last Name -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input 
+                        type="text" 
+                        placeholder="First Name" 
+                        class="w-full bg-[#222227] border border-transparent focus:border-gray-700 text-sm text-white rounded-xl px-4 py-3.5 outline-none placeholder-gray-500 transition"
+                    />
+                    <input 
+                        type="text" 
+                        placeholder="Last Name" 
+                        class="w-full bg-[#222227] border border-transparent focus:border-gray-700 text-sm text-white rounded-xl px-4 py-3.5 outline-none placeholder-gray-500 transition"
+                    />
+                </div>
+
+                <!-- Email -->
+                <input 
+                    type="email" 
+                    placeholder="Email" 
+                    class="w-full bg-[#222227] border border-transparent focus:border-gray-700 text-sm text-white rounded-xl px-4 py-3.5 outline-none placeholder-gray-500 transition"
+                />
+
+                <!-- Company -->
+                <input 
+                    type="text" 
+                    placeholder="Company" 
+                    class="w-full bg-[#222227] border border-transparent focus:border-gray-700 text-sm text-white rounded-xl px-4 py-3.5 outline-none placeholder-gray-500 transition"
+                />
+
+                <!-- Phone Number -->
+                <div class="flex items-center bg-[#222227] rounded-xl overflow-hidden border border-transparent focus-within:border-gray-700 transition">
+                    <div class="flex items-center gap-1.5 px-3 py-3.5 bg-[#2a2a30] text-sm text-white select-none cursor-pointer border-r border-gray-800">
+                        <span class="text-base">🇺🇸</span>
+                        <span class="text-gray-300 text-xs">+1</span>
+                        <span class="text-gray-500 text-[10px]">▼</span>
+                    </div>
+                    <input 
+                        type="tel" 
+                        placeholder="Phone Number" 
+                        class="w-full bg-transparent text-sm text-white px-4 py-3.5 outline-none placeholder-gray-500"
+                    />
+                </div>
+
+                <!-- Message -->
+                <textarea 
+                    rows="5" 
+                    placeholder="Message" 
+                    class="w-full bg-[#222227] border border-transparent focus:border-gray-700 text-sm text-white rounded-xl px-4 py-3.5 outline-none placeholder-gray-500 resize-none transition"
+                ></textarea>
+
+                <!-- Тугмаи Send -->
+                <button 
+                    type="submit" 
+                    class="w-full bg-[#1384ff] hover:bg-[#0069d9] text-white font-semibold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition duration-200 active:scale-98 shadow-lg shadow-blue-500/10"
+                >
+                    <span>Send</span>
+                    <!-- Иконаи тайёра (Telegram-style) -->
+                    <svg class="w-4 h-4 transform rotate-45 -mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <!-- СУТУНИ РОСТ: Маълумот барои алоқа -->
+        <div class="lg:col-span-5 flex flex-col gap-6">
+            
+            <!-- Блоки 1: Блоки Алоқа (Contact Information) -->
+            <div class="bg-[#18181c] border border-gray-800 rounded-2xl p-6 md:p-8 shadow-xl flex-1">
+                <h2 class="text-xl font-bold text-white mb-6">Contact Information</h2>
+                
+                <div class="space-y-6">
+                    <!-- Email -->
+                    <div class="flex items-start gap-4">
+                        <div class="text-[#1384ff] mt-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Email</h4>
+                            <p class="text-sm text-gray-400 mt-0.5">contact@catalystanalytics.io</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="flex items-start gap-4">
+                        <div class="text-[#1384ff] mt-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Phone</h4>
+                            <p class="text-sm text-gray-400 mt-0.5">(469) 712-4672</p>
+                        </div>
+                    </div>
+
+                    <!-- Office -->
+                    <div class="flex items-start gap-4">
+                        <div class="text-[#1384ff] mt-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Office</h4>
+                            <div class="text-sm text-gray-400 mt-0.5 space-y-0.5">
+                                <p>5511 Parkcrest Dr, Suite 103</p>
+                                <p>Austin, TX 78731</p>
+                                <p>United States</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Блоки 2: Брон кардани вохӯрӣ (Book a Meeting) -->
+            <div class="bg-[#18181c] border border-gray-800 rounded-2xl p-6 md:p-8 shadow-xl">
+                <h2 class="text-xl font-bold text-white mb-3">Contact Information</h2>
+                <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                    Want to discuss your project in detail? Schedule a free 30-minute consultation with our team of experts. We'll help you understand how our solutions can benefit your business.
+                </p>
+                <a 
+                    href="#" 
+                    class="w-full bg-[#1384ff] hover:bg-[#0069d9] text-white font-semibold py-3.5 px-4 rounded-xl flex items-center justify-center transition duration-200 text-sm shadow-lg shadow-blue-500/10"
+                >
+                    Book a Meeting
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class=" text-white pt-16 pb-8 px-6 font-sans border-t border-gray-900">
+    <div class="max-w-7xl mx-auto">
+        
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 pb-12">
+            
+            <div class="flex items-center space-x-2">
+                <img src="./images/Logo (6).png" alt="" class="h-8 w-auto">
+            </div>
+
+            <nav class="flex flex-wrap items-center gap-x-8 gap-y-4 text-sm font-medium text-gray-300">
+                <a href="./index.html" target="_blank" class="hover:text-white transition">Home</a>
+                <a href="./page1.html " target="_blank" class="hover:text-white transition">Services</a>
+                <a href="./page2.html" target="_blank" class="hover:text-white transition">Portfolio</a>
+                <a href="./page3.html" target="_blank" class="hover:text-white transition">About Us</a>
+                <a href="./page4.html" target="_blank" class="hover:text-white transition">Careers</a>
+            </nav>
+
+            <div class="flex items-center space-x-3 bg-[#0a0a0a] p-3 rounded-2xl border border-gray-900/60 w-fit">
+                <a href="#" class="bg-[#111315] hover:bg-gray-800 p-3 rounded-xl border border-gray-800/40 block transition">
+                    <img src="./images/Button.png" alt="" class="w-8">
+                </a>
+                <a href="#" class="bg-[#111315] hover:bg-gray-800 p-3 rounded-xl border border-gray-800/40 block transition">
+                    <img src="./images/Button (1).png" alt="" class="w-8">
+                </a>
+                <a href="#" class="bg-[#111315] hover:bg-gray-800 p-3 rounded-xl border border-gray-800/40 block transition">
+                    <img src="./images/Button (2).png" alt="" class="w-8">
+                </a>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 pt-8 border-t border-gray-900 text-sm text-gray-400">
+            
+            <div class="flex flex-col md:flex-row md:items-center gap-y-3 gap-x-8">
+                <div class="flex items-center space-x-2">
+                    <img src="./images/Icon.png" alt="" class="w-4 h-4 object-contain text-[#1d4ed8]">
+                    <a class="hover:text-white transition underline underline-offset-4 decoration-gray-800">contact@catalystanalytics.io</a>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="./images/Icon (1).png" alt="" class="w-4 h-4 object-contain text-[#1d4ed8]">
+                    <a href="tel:+992931005905" class="hover:text-white transition underline underline-offset-4 decoration-gray-800">+1(469) 712-4672</a>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="./images/Icon (2).png" alt="Location" class="w-4 h-4 object-contain text-[#1d4ed8]">
+                    <span class="underline underline-offset-4 decoration-gray-800">5511 Parkcrest Dr, Suite 103, Austin, TX 78731</span>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
+            </div>
+        </div>
+
+        <div class="text-center text-xs text-gray-500 pt-12">
+            © 2025 Catalyst Analytics. All rights reserved.
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
