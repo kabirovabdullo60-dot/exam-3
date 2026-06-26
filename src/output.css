@@ -40,6 +40,8 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --font-weight-normal: 400;
@@ -222,6 +224,9 @@
   .relative {
     position: relative;
   }
+  .inset-0 {
+    inset: 0;
+  }
   .top-0 {
     top: 0;
   }
@@ -236,6 +241,9 @@
   }
   .-z-10 {
     z-index: calc(10 * -1);
+  }
+  .z-10 {
+    z-index: 10;
   }
   .order-1 {
     order: 1;
@@ -420,6 +428,9 @@
   .max-w-\[0px\] {
     max-width: 0px;
   }
+  .max-w-\[400px\] {
+    max-width: 400px;
+  }
   .max-w-\[450px\] {
     max-width: 450px;
   }
@@ -571,6 +582,9 @@
   .rounded-\[2rem\] {
     border-radius: 2rem;
   }
+  .rounded-\[3rem\] {
+    border-radius: 3rem;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -699,6 +713,9 @@
   }
   .\[background-size\:16px_16px\] {
     background-size: 16px 16px;
+  }
+  .\[background-size\:24px_24px\] {
+    background-size: 24px 24px;
   }
   .object-contain {
     object-fit: contain;
@@ -1100,6 +1117,11 @@
       padding: calc(var(--spacing) * 10);
     }
   }
+  .md\:p-16 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 16);
+    }
+  }
   .md\:py-16 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 16);
@@ -1121,6 +1143,12 @@
       line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
+  .md\:text-5xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
   .md\:text-6xl {
     @media (width >= 48rem) {
       font-size: var(--text-6xl);
@@ -1139,9 +1167,29 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+  .lg\:col-span-5 {
+    @media (width >= 64rem) {
+      grid-column: span 5 / span 5;
+    }
+  }
+  .lg\:col-span-7 {
+    @media (width >= 64rem) {
+      grid-column: span 7 / span 7;
+    }
+  }
   .lg\:-mt-20 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * -20);
+    }
+  }
+  .lg\:max-w-none {
+    @media (width >= 64rem) {
+      max-width: none;
+    }
+  }
+  .lg\:grid-cols-12 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
     }
   }
   .lg\:flex-row {
@@ -1157,6 +1205,11 @@
   .lg\:justify-between {
     @media (width >= 64rem) {
       justify-content: space-between;
+    }
+  }
+  .lg\:justify-end {
+    @media (width >= 64rem) {
+      justify-content: flex-end;
     }
   }
 }
