@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catalyst Analytics</title>
+       <link rel="stylesheet" href="./src/output.css">
+    <style>
+        .bg-dots {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="bg-[#02050f] text-white font-sans antialiased bg-dots  flex flex-col justify-between ">
+
+    <header class="max-w-7xl w-full mx-auto px-6 py-6 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <img src="./src/images/Logo (6).png" alt="" class="w-30">
+        </div>
+
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+            <a href="./index.html" class="hover:text-white transition">Home</a>
+            <a href="./src/page1.html" class="hover:text-white transition">Services</a>
+            <a href="./src/page2.html" class="hover:text-white transition">Careers</a>
+            <a href="./src/page3.html" class="hover:text-white transition">Career Details</a>
+            <a href="./src/page4.html" class="hover:text-white transition">Contact</a>
+        </nav>
+
+        <div>
+            <a href="#" class="bg-[#1d4ed8] hover:bg-blue-600 text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition shadow-lg shadow-blue-500/20">
+                Contact Us
+            </a>
+        </div>
+    </header>
+
+    <section class="max-w-7xl w-full mx-auto px-6 py-12 md:py-20 grid md:grid-cols-2 gap-12 items-center flex-grow -mt-30">
+        <div class="space-y-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                Transforming Data <br> into 
+                <span class="bg-[#1d4ed8] text-white px-4 py-1 rounded-xl inline-block mt-2 shadow-md">Decisions</span>
+            </h1>
+            
+            <p class="text-gray-400 text-lg max-w-md leading-relaxed">
+                Leverage the power of machine learning and AI to unlock insights and drive business growth.
+            </p>
+
+            <div>
+                <a href="#" class="bg-[#1d4ed8] hover:bg-blue-600 text-white px-6 py-3 rounded-xl text-sm font-semibold transition inline-block shadow-lg shadow-blue-500/20">
+                    Book a Meeting
+                </a>
+            </div>
+
+            <div class="flex items-center space-x-3 pt-4">
+                <div class="flex -space-x-2">
+                    <img class="inline-block h-8 w-8 rounded-full ring-2 ring-[#030712]" src="user1.jpg" alt="User 1">
+                    <img class="inline-block h-8 w-8 rounded-full ring-2 ring-[#030712]" src="user2.jpg" alt="User 2">
+                    <img class="inline-block h-8 w-8 rounded-full ring-2 ring-[#030712]" src="user3.jpg" alt="User 3">
+                </div>
+                <p class="text-xs text-gray-400">
+                    Over <span class="text-white font-bold">100+</span> clients have worked with us
+                </p>
+            </div>
+        </div>
+
+        <div class="flex justify-center md:justify-end relative">
+            <div class="absolute w-72 h-72 bg-blue-500/10 rounded-full blur-3xl -z-10"></div>
+            <img src="./src/images/robot area (1).png" alt="" class="w-300">
+        </div>
+    </section>
+
+    <div class="w-full border-t border-gray-800/60 bg-[#030712]/50 backdrop-blur-sm py-10 mt-auto -mt-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-8 opacity-75">
+            <img src="./src/images/Card (1).png" alt="" class="w-50">
+            <img src="./src/images/Logo (7).png" alt="" class="w-33">
+            <img src="./src/images/Logo (8).png" alt="" class="w-27">
+            <img src="./src/images/Card (2).png" alt="" class="w-50">
+            <img src="./src/images/Logo (9).png" alt="" class="w-28">
+            <img src="./src/images/Logo (10).png" alt="" class="w-27">
+        </div>
+    </div>
+
 </body>
 </html>
